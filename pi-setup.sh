@@ -7,7 +7,7 @@ update_packages() {
 
 
 install_vim() {
-        sudo apt install vim
+        sudo apt install vim -y
 }
 
 
@@ -23,7 +23,7 @@ install_wireguard() {
 
 
 install_qbittorrent() {
-        sudo apt install qbittorrent
+        sudo apt install qbittorrent -y
 }
 
 
@@ -33,7 +33,7 @@ install_plex() {
                 curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add - && \
                 echo deb https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list && \
                 sudo apt update && \
-                sudo apt install plexmediaserver
+                sudo apt install plexmediaserver -y
 }
 
 
