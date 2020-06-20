@@ -135,8 +135,8 @@ plexit() {
 
         [[ $# -eq 1 ]] && target=$1 || target=$default
 
-        if [ find $DOWNLOADS -type d -empty ]
-                return
+        if [[ $(find $DOWNLOADS -type d -empty) ]]; then
+                return 1
         fi
 
         case $target in
