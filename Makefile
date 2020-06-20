@@ -6,6 +6,7 @@ all: setup config
 setup:
 	chmod +x pi-setup.sh
 	./pi-setup.sh
+	chmod -x pi-setup.sh
 
 
 config: clean
