@@ -127,7 +127,7 @@ wgvpn() {
 
 # Move media to Plex library
 plexit() {
-        DOWNLOADS="/media/pi/MediaLibrary/torrent_downloads/*"
+        DOWNLOADS="/media/pi/MediaLibrary/torrent_downloads/"
         TV="/media/pi/MediaLibrary/media/tv/"
 
         default="tv"
@@ -137,7 +137,7 @@ plexit() {
 
         case $target in
                 "tv")
-                        mv "$DOWNLOADS" "$TV"
+                        mv "$DOWNLOADS"/* "$TV"
                         ;;
                 *)
                         echo $usage
