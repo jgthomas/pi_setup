@@ -11,7 +11,6 @@ setup:
 config: clean
 	ln -s ${HOME}/pi_setup/bashrc ${HOME}/.bashrc
 	ln -s ${HOME}/pi_setup/inputrc ${HOME}/.inputrc
-	source ${HOME}/.bashrc
 
 
 clean:
