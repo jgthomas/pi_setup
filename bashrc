@@ -137,7 +137,7 @@ plexit() {
 
         case $target in
                 "tv")
-                        mv "$DOWNLOADS"/* "$TV"
+                        mv "${DOWNLOADS}"/* "$TV"
                         ;;
                 *)
                         echo $usage
