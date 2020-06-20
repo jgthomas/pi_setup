@@ -135,6 +135,10 @@ plexit() {
 
         [[ $# -eq 1 ]] && target=$1 || target=$default
 
+        if [ find $DOWNLOADS -type d -empty ]
+                return
+        fi
+
         case $target in
                 "tv")
                         mv "${DOWNLOADS}"/* "$TV"
