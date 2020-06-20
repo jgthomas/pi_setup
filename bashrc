@@ -127,7 +127,7 @@ wgvpn() {
 
 # Move media to Plex library
 plexit() {
-        DOWNLOADS="/media/pi/MediaLibrary/torrent_downloads/"
+        DOWNLOADS="/media/pi/MediaLibrary/torrent_downloads"
         TV="/media/pi/MediaLibrary/media/tv/"
 
         default="tv"
