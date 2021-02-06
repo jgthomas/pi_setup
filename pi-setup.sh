@@ -40,7 +40,7 @@ install_plex() {
 pi_setup() {
         update_packages && \
                 install_vim && \
-                install_wireguard && \
+                # install_wireguard && \
                 install_qbittorrent && \
                 install_plex
 }
