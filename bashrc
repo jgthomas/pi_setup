@@ -103,7 +103,7 @@ man() {
 
 # Control VPN connection
 wgvpn() {
-        default="sweden"
+        default="protonVPN"
         usage="wgvpn start|stop|status [country], defaults to *"$default"*"
 
         [[ $# -eq 2 ]] && country=$2 || country=$default
